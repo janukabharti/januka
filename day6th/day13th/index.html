@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/nmp/@tailwindcss/browse@4"></script>
+</head>
+<body>
+   <div class="w-[80vh] container mx-auto grid grid-cols-3" id="grid">
+   </div> 
+   <script>
+    let grid = document.getElementById("grid")
+    let url = "https://fakestoreapi.com/products"
+    let data = async() =>{
+        let res = await fetch(url)
+        let data = await res.json()
+        data.map((product)=>{
+            let div = document.createElement("div")
+            div.innerHTML =
+            <img scr="${product.image}" alt="class="w=[50vwh] object-contain">
+            <h1 class="text-2xl font-semibold">price:${product.title}<h1>
+        })
+    }
+   </script>
+
+</body>
+</html>
+
+
+

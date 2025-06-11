@@ -1,0 +1,93 @@
+.measurement{
+    background-color: red;
+    height: 100px;
+}
+.one{
+    font-size: 24px;
+}
+.two{
+    /* padding -> space between border and content */
+    /* padding: 10px;, padding: 10px 20px; padding: 10px 20px 30px 40px; */
+    /* padding-top: 10px */
+    /* padding-right: 20px */
+    /* padding-bottom: 15px */
+    /* padding-right: 12px */
+    font-size: 1.5em;
+    padding: 10px ;
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
+    padding-left: 20px;
+    padding-right: 30px;
+
+    /* border -> space between padding and margin */
+    /* border-width, border-color, border-style, border-radius */
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
+    border-style: dotted;
+    border-style: double;
+    border-style: groove;
+    border-radius: 30px;
+
+    /* border: 2px solid black */
+    border: 10px solid red;
+    border-right: 10px solid green;
+    border-bottom: 0px solid yellow;
+    border-left: 10px dashed purple;
+
+    /* margin -> space between 2 element */
+    /* margin: 10px;, margin: 10px 20px; margin: 10px 20px 30px 40px; */
+    /* margin-top: 10px */
+    /* margin-right: 20px */
+    /* margin-bottom: 15px */
+    /* margin-left: 12px */
+    margin: 10.4px;
+    margin: 11px 20px;
+    margin: 10px 20px 30px 40px;
+    margin-top: 70px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 120px;
+    /* picture -> img tag */
+}
+.three{
+    font-size: 1.5rem;
+}
+.child{
+    height:33.33%;
+    background-color: aqua;
+}
+.child2{
+    height:33.33%;
+    background-color: black;
+}
+.child3{
+    height:33.33%;
+    background-color: rgb(17, 255, 0);
+}
+
+.img{
+width: 500px;
+height: 300px;
+}
+
+.measurement{
+    margin: 0 auto;
+    width: 500px;
+}
+
+.adiv{
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+}
+
+.kpop{
+margin-right: 30px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+.body {
+    width: 75;
+}

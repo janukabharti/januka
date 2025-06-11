@@ -1,0 +1,45 @@
+/*shadow*/
+/*shadow
+-text shadow:
+*/
+p{
+    text-shadow: 10px 10px 5px aquamarine;
+    color: blue;
+}
+
+
+article{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    overflow: visible; /*default -> visible*/
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+}
+img{
+    float: left;
+    float: right;
+}
+.parent{
+    width: 75vw;
+    float: inline-start;
+}
+.one{
+    width: 33.3%;
+    float: left;
+ }
+.two{
+    width: 33.3%;
+    float:left;
+ }
+ .three{
+    width: 33.33%;
+    float: inline-end;
+ }
+ .anime{
+    float: centre;
+    width: 50%;
+    overflow:visible;
+ }
+ 

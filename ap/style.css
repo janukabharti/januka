@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e6e6fa; /* Light purple background */
+    font-family: 'Playfair Display', serif;
+    padding: 30px;
+    border: 10px solid navy;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .image-section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .title h1 {
+    font-size: 2.5rem;
+    color: #191970; /* dark blue */
+    font-weight: 700;
+  }
+  
+  .title h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .content {
+    margin-top: 40px;
+    text-align: justify;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .content strong {
+    font-weight: bold;
+  }
+  

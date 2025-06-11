@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Dom -> elements | how we can access and modify html page -->
+    <button id="btn">click will print </button>
+    <h1 id="h1"></h1>
+    <h2 class="h2"></h2>
+    <img alt="" id="img">
+    <h3 ></h3>
+    <h4 ></h4>
+    <h5 ></h5>
+    <button id="btn2">Remove Event Listener</button>
+    <ol id="ol"></ol>
+    <script>
+        // 5. how to add event listeners -> addEventListiner -> click , mouseover, mouseout, DocumentContentLoaded
+        btn = document.getElementById("btn")
+        //  btn.addeventListiner("", callbackfuncion , true or false)
+        btn.addEventListener("click", function(){
+            alert("hello bye")
+        })
+        // 6. how to remove event listeners -> removeEventListiner
+        btn2 = document.getElementById("btn2")
+        btn2.addEventListener("click", function(){
+            btn.removeEventListener("click", function(){
+                alert("hello bye")
+            })
+        })
+        // 7. how to add attribute -> setAttribute
+        let img = document.getElementById("img")
+        img.setAttribute("src", "https://images.unsplash.com/photo-1748199810439-4cdf6554c6c5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8")
+        // 8. how to remove attribute -> removeAttribute
+        img.removeAttribute("alt")
+
+
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

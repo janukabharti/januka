@@ -1,0 +1,62 @@
+.measurement{
+  background-color: red; 
+height:100px;
+width:50w;  
+}
+.one{
+    font-size: 24px;
+}
+.two{
+    /*padding->> space between border and content*/
+    /*padding:10px; padding:10px 20px; padding:10px 20px 30px 40px;*/
+    /*padding-top:10px*/
+    /*padding-right:20px */
+    /*padding-bottom:15px*/
+    /*padding-right:12px */
+    font-size: 1.5em;
+    padding: 10px;
+    padding-top: 100px;
+    /*padding-bottom:50px;*/
+    padding-left: 20px;
+    padding-right: 30px;
+
+    /*border-->space between padding and margin*/
+    /*border-width, border-color, border-style, border-radius*/
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
+    border-style: dotted;
+    border-style: double;
+    border-style: groove;
+    border-radius: 30px;
+
+    /*border: 2px solid black*/
+    border: 10px solid red;
+    border-right: 10px solid green;
+    border-bottom: 0px solid yellow;
+    border-left: 10px darkslateblue;
+
+    /*margin-> space between 2element *>
+    /*margin:10.4px;, margin:10px 20px; margin:10px 20px 30px 40px;*/
+    /*margin-top:10px */
+    /*margin-right:20px */
+/*margin-bottom:15px */
+/*margin-right:12px */
+    /*margin-bottom:15px */
+
+}
+.three{
+    font-size: 1.5rem;
+}
+.child{
+    height: 33.33%;
+    background-color: aqua;
+}
+.child2{
+    height: 33.55%;
+    background-color: blue;
+}
+.child{
+    height: 33.33%;
+    background-color: rgb(17,25,0);
+}

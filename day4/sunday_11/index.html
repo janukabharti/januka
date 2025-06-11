@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Two Numbers</title>
+</head>
+<body>
+  <h2>Sum Calculator</h2>
+  <p id="result"></p>
+
+  <script>
+    // Prompt the user for two numbers
+    let num1 = prompt("Enter the first number:");
+    let num2 = prompt("Enter the second number:");
+
+    // Convert the input strings to numbers
+    let sum = Number(num1) + Number(num2);
+
+    // Display the result in the HTML
+    document.getElementById("result").innerHTML = num1 + " + " + num2 + " = " + sum;
+  </script>
+</body>
+</html>

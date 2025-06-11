@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List all the products</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-[80vw] h-[80vh] container mx-auto grid grid-cols-3" id="grid">
+    </div>
+    <script>
+        let grid = document.getElementById("grid")
+        let datas = JSON.parse(localStorage.getItem("cart")) || []
+        let quantity = 1
+            datas.map((product)=>{
+                let div = document.createElement("div")
+                div.innerHTML = `
+                    <img src="${product.image}" alt="" class="w-[50vw] h-[50vh] object-contain">
+                    <h1 class="text-2xl font-semibold">${product.title}</h1>
+                    <h1 class="text-xl font-semibold">price: <span class="one">${product.price}</span></h1>
+                    <button class="border-2 border-black rounded-md 
+                    px-2 py-1 bg-green-600 hover:bg-green-900 hover:border-green-900"
+                    >Remove Items</button>
+                    <div>
+                        <button class="inc">inc</button>
+                        <span class="text-2xl qty">${quantity}</span>
+                        <button class="dec">dec</button>    
+                    </div>
+
+                `
+                // remove a single item
+                const button = div.querySelector("button")
+                button.addEventListener("click", () => {
+                    items = JSON.parse(localStorage.getItem("cart")) || []
+                    let index = items.indexOf(product)
+                    items.splice(index, 1)
+                    localStorage.setItem("cart", JSON.stringify(items))
+                    alert(product is removed ${product.title})
+                })
+                // inc and dec and quantity
+                let inc = div.querySelector(".inc")
+                let dec = div.querySelector(".dec")
+                let qty = div.querySelector(".qty")
+                inc.addEventListener("click", ()=>{
+                    quantity++
+                    qty.innerHTML = quantity
+                })
+                dec.addEventListener("click", ()=>{
+                    quantity--
+                    qty.innerHTML = quantity
+                })
+
+                grid.appendChild(div)
+            })
+    </script>
+</body>
+</html>

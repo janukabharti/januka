@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-[80vw] h-[100vh] container mx-auto"> 
+        <form class="flex flex-col items-center justify-center">
+            <input id="weather" type="text" class="border-2 border-black rounded-md 
+            px-2 py-1 my-4">
+            <button id="submit" type="submit" class="border-2 border-green-200
+            rounded-md px-4 my-6 inline-block">Submit</button>
+        </form>
+        <div>
+                <h1 >Current Country: <span id="country"></span></h1>
+                <h1 >Current Location: <span id="name"></span> </h1>
+                <h1>Current Location: <span  id="temp"></span></h1>
+                <img src="" alt="" id="img">
+        </div>
+    </div>
+    <script>
+        let weather = document.getElementById("weather")
+        let submit  = document.getElementById("submit")
+        let country = document.getElementById("country")
+        let name = document.getElementById("name")
+        let temp = document.getElementById("temp")
+        let img = document.getElementById("img")
+
+        submit.addEventListener("click", (e)=>{
+            e.preventDefault()
+            let district = weather.value;
+            let url = http://api.weatherapi.com/v1/current.json?key=9c9940e9e1bf4e4ca6013952243112&q=${district}&aqi=no
+            let data = async()=>{
+                let info  = await fetch(url)
+                let data = await info.json()
+                console.log(data.location.country);
+                console.log(data.current.temp_c);
+                console.log(data.current.condition.text);
+                console.log(data.current.condition.icon);
+                country.innerHTML = data.location.country
+                name.innerHTML = data.location.name
+                temp.innerHTML = data.current.temp_c
+                img.src = data.current.condition.icon
+            }
+            data()
+        })
+
+</script>
+</body>
+</html>

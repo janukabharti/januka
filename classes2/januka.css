@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>);
+.title{
+
+    background-color: red;
+    background-color: rgb(4,146, 255);
+    background-color: rgb(4,146,0.999);
+    text-align: right;
+    color: antiquewhite;
+    color: #00e1ff;
+}
+.description{
+    font: style 18px;
+    font-weight: 900;
+    font-style: normal;
+    font-family: cursive;
+    text-align: center;
+    text-decoration: underline;
+    text-transform:uppercase ;
+    text-transform: lowercase;
+    text-transform: capitalize;
+word-break: break-all;
+word-wrap:normal ;
+letter-spacing: 4px;
+word-spacing: 40px;
+}
+a{
+    text-decoration: none;
+}

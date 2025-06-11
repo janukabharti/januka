@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    border: 2px solid red;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 30px;
+    display: inline-block;
+    background-color: chartreuse;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    border: 2px solid red;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 30px;
+    display: inline-block;
+    background-color: chartreuse;
+}
+/* :hover, :link, :visited, :active, :nth-child */
+.link:hover{
+    padding: 15px 20px;
+    margin: 40px;
+    background-color: rgb(0, 8, 255);
+}
+.link:link{
+    padding: 15px 20px;
+    margin: 40px;
+    background-color: rgb(0, 8, 255);
+}
+.link:visited{
+    padding: 15px 20px;
+    margin: 40px;
+    background-color: rgb(255, 0, 0);
+}
+
+.links:active{
+    padding: 15px 20px;
+    margin: 40px;
+    background-color: rgb(0, 0, 0);
+}
+.link:active{
+    padding: 15px 20px;
+    margin: 40px;
+    background-color: rgb(0, 0, 0);
+}
+li:nth-child(4){
+    background-color: rgb(111, 255, 0);
+}
+li:nth-child(odd){
+    background-color: red;
+}
+li:nth-child(even){
+    background-color: rgb(4, 0, 255);
+}
+.link::after{
+    content: "😄";
+}
+.links::before{
+    content: "nice";
+    padding: 10px;
+}
+h1{
+    background-color: yellow;
+    height: 100px;
+    width: 100vw;
+    display: block;
+    display: inline;
+    display: none;
+    display: inline-block;
+    visibility: visible; /* deafult */
+    visibility: hidden;
+}
+h2{
+    background-color: rgb(255, 0, 242);
+    height: 100px;
+}
+.combinators p{
+    background-color: palegreen;
+}
+.combinators > p{
+    background-color: rgb(4, 125, 4);
+}
+.ine ~ p{
+    background-color: rgb(0, 0, 0);
+}
+
+.tr + p{
+    background-color: rgb(255, 10, 10);
+}
